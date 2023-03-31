@@ -10,9 +10,12 @@ import Disconnected from '../components/Disconnected'
 const Home: NextPage = () => {
   const { connected } = useWallet()
   return (
-    <>
-      <Head/>
-
+    <div className={styles.container}>
+      <Head>
+        <title>Buildoors</title>
+        <meta name="The NFT Collection for Buildoors" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Box
         w="full"
         h="calc(100vh)"
@@ -43,9 +46,8 @@ const Home: NextPage = () => {
           </Center>
         </Stack>
       </Box>
-      </>
+    </div>
     )
-  
 }
 
 export default Home
